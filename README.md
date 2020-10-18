@@ -1,6 +1,7 @@
 # O programie GIMS (Graphical Inventory Management System)
 
 (?) - Oznacza dodatkowe założenia, które na ten czas są w planach, lecz mogą ulec zmianie
+
 (Test) - Moduł niedokończony
 
 # Pomysł 

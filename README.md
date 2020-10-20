@@ -29,7 +29,7 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 
 # Zadania:
 - [ ] Przygotowanie środowiska do rozpoczęcia projektu
-- [ ] Instalacja niezbędnych narzędzi do rozpoczęcia projektu
+- [ ] Instalacja niezbędnych narzędzi 
 
 ### Raporty:
  - [x] Propozycja projektu (20.10.20)

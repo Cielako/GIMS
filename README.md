@@ -25,11 +25,19 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 - C++
 - Mysql
 - QtGui / Lub inna biblioteka jeśli znajdzie się jakaś ciekawa
-- Ewentualnie dodatkowe biblioteki usprawniające pisanie lub zwiększenie możliwości aplikacji
+- XAMPP (Apache + MySQL) jako serwer bazodanowy
 
 # Zadania:
 ### Przygotowanie środowiska do rozpoczęcia projektu:
-- [ ] Instalacja Qt i MySQL
+- [x] Instalacja, Konfiguracja Qt i MySQL
+- [x] Zapoznanie się z możliwościami Qt
+
+### Rozpoczęcie projektu:
+- [x] Utworzenie pierwszego Okna w Qt
+- [ ] Zapoznanie się z możliwościami Qt
+- [ ] Projekt i implementacja roboczej bazy danych
+- [ ] Pierwsze połączenie z bazą danych
+
 
 ### Raporty:
  - [x] Propozycja projektu (20.10.20)

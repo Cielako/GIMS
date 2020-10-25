@@ -28,8 +28,8 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 - Ewentualnie dodatkowe biblioteki usprawniające pisanie lub zwiększenie możliwości aplikacji
 
 # Zadania:
-- [ ] Przygotowanie środowiska do rozpoczęcia projektu
-- [ ] Instalacja niezbędnych narzędzi 
+### Przygotowanie środowiska do rozpoczęcia projektu:
+- [ ] Instalacja Qt i MySQL
 
 ### Raporty:
  - [x] Propozycja projektu (20.10.20)

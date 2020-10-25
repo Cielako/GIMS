@@ -34,8 +34,8 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 
 ### Rozpoczęcie projektu:
 - [x] Utworzenie pierwszego Okna w Qt
-- [ ] Zapoznanie się z możliwościami Qt
-- [ ] Projekt i implementacja roboczej bazy danych
+- [ ] Eksperymentowanie z interfejsem graficznym
+- [ ] Projekt roboczej bazy danych
 - [ ] Pierwsze połączenie z bazą danych
 
 

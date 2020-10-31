@@ -34,10 +34,12 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 
 ### Rozpoczęcie projektu:
 - [x] Utworzenie pierwszego Okna w Qt
-- [ ] Eksperymentowanie z interfejsem graficznym
-- [ ] Projekt roboczej bazy danych
-- [ ] Pierwsze połączenie z bazą danych
-
+- [x] Eksperymentowanie z interfejsem graficznym (dodano skróty w postaci ikon)
+- [x] Projekt roboczej bazy danych 
+- [x] Pierwsze połączenie z bazą danych
+- [ ] Wyświetlenie zawartości bazy danych w postaci listy
+- [ ] Zaprogramowanie utworzonych ikon
+- [ ] Pierwsza ingerencja w bazę danych z poziomu aplikacji
 
 ### Raporty:
  - [x] Propozycja projektu (20.10.20)

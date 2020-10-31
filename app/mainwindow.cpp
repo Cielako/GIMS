@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this ->setWindowTitle("GIMS"); // Zmień nazwę aplikacji
 }
 
 MainWindow::~MainWindow()
@@ -43,4 +44,19 @@ void MainWindow::on_pushButton_clicked()
         // Info dlaczego połączenie się nie powiodło
           QMessageBox::information(this, "Connection", error.databaseText());
       }
+}
+
+void MainWindow::on_actioninformacje_triggered()
+{
+
+}
+
+void MainWindow::on_action_exit_app_triggered()
+{
+    //Dialog exit;
+    //exit.setModal(true);
+    //exit.exec();
+
+    nowyDialog = new Dialog(this);
+    nowyDialog ->show();
 }

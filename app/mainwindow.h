@@ -8,6 +8,8 @@
 #include <QMessageBox>
 #include <QSqlError>
 
+#include "dialog.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -23,7 +25,12 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_actioninformacje_triggered();
+
+    void on_action_exit_app_triggered();
+
 private:
     Ui::MainWindow *ui;
+    Dialog *nowyDialog;
 };
 #endif // MAINWINDOW_H

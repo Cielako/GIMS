@@ -37,7 +37,7 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 - [x] Eksperymentowanie z interfejsem graficznym (dodano skróty w postaci ikon)
 - [x] Projekt roboczej bazy danych 
 - [x] Pierwsze połączenie z bazą danych
-- [ ] Wyświetlenie zawartości bazy danych w postaci listy
+- [x] Wyświetlenie zawartości bazy danych w postaci listy (Test)
 - [ ] Zaprogramowanie utworzonych ikon
 - [ ] Pierwsza ingerencja w bazę danych z poziomu aplikacji
 

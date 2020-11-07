@@ -2,6 +2,10 @@
 #define DIALOG_H
 
 #include <QDialog>
+#include <QtSql>
+#include <QSqlDatabase>
+#include <QMessageBox>
+#include <QSqlError>
 
 namespace Ui {
 class Dialog;

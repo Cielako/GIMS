@@ -17,14 +17,24 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>280</y>
+      <x>660</x>
+      <y>80</y>
       <width>131</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
      <string>Połącz z bazą danych</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>451</width>
+      <height>201</height>
+     </rect>
     </property>
    </widget>
   </widget>

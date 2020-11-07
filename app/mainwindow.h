@@ -31,6 +31,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    Dialog *nowyDialog;
+    Dialog *exitDialog;
+    QSqlQueryModel *querymodel;
 };
 #endif // MAINWINDOW_H

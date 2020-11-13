@@ -9,6 +9,8 @@
 #include <QSqlError>
 
 #include "dialog.h"
+#include "database.h"
+#include "ui_mainwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,14 +26,15 @@ public:
 
 private slots:
     void on_pushButton_clicked();
-
     void on_actioninformacje_triggered();
-
     void on_action_exit_app_triggered();
+    void on_searchTerm_editingFinished();
+
 
 private:
     Ui::MainWindow *ui;
     Dialog *exitDialog;
     QSqlQueryModel *querymodel;
+
 };
 #endif // MAINWINDOW_H

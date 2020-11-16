@@ -16,12 +16,12 @@ Dialog::~Dialog()
 
 void Dialog::on_exit_yes_no_accepted()
 {
-    qApp->exit(); // Zamykmnales aplikację
-    qDebug() << "Zamknieto Aplikacje";
+    qApp->exit();
+    qDebug() << "Zamknieto aplikacje";
 }
 
 void Dialog::on_exit_yes_no_rejected()
 {
     this -> close();// Zamykamy otwarte okno
-    qDebug() << "Anulowano zamkniecie programu";
+    qDebug() << "Anulowano zamkniecie aplikacji";
 }

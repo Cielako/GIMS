@@ -23,7 +23,6 @@ public:
 
 
 private:
-    QString *action_query;
     QSqlDatabase m_db;
     Ui::MainWindow *ref_to_ui;
     QSqlQueryModel *querymodel;

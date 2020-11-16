@@ -23,18 +23,18 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    QString action_query;
 
 private slots:
-    void on_pushButton_clicked();
     void on_actioninformacje_triggered();
+    void on_action_show_all_productsl_triggered();
+    void on_action_delete_producy_triggered();
     void on_action_exit_app_triggered();
-    void on_searchTerm_editingFinished();
-
+    void on_searchTerm_textChanged();
 
 private:
     Ui::MainWindow *ui;
     Dialog *exitDialog;
     QSqlQueryModel *querymodel;
-
 };
 #endif // MAINWINDOW_H

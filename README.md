@@ -32,7 +32,7 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 - [x] Instalacja, Konfiguracja Qt i MySQL
 - [x] Zapoznanie się z możliwościami Qt
 
-### Rozpoczęcie projektu:
+### To do:
 - [x] Utworzenie pierwszego Okna w Qt
 - [x] Eksperymentowanie z interfejsem graficznym (dodano skróty w postaci ikon)
 - [x] Projekt roboczej bazy danych 
@@ -49,7 +49,7 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 ### Raporty:
  - [x] Propozycja projektu (20.10.20)
  - [x] Raport I (03.11.20)
- - [ ] Raport II (17.11.20)
+ - [x] Raport II (17.11.20)
  - [ ] Raport III (01.12.20)
  - [ ] Raport IV(15.12.20)
  - [ ] Prototyp (12.01.21)

@@ -90,7 +90,7 @@ public:
         searchTerm->setGeometry(QRect(250, 80, 271, 20));
         label = new QLabel(centralwidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(270, 50, 231, 21));
+        label->setGeometry(QRect(270, 50, 231, 31));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QStringLiteral("menubar"));

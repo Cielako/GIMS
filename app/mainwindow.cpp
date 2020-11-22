@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "database.h"
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -31,24 +31,28 @@ void MainWindow::on_action_show_all_productsl_triggered() // Wczytaj ponownie ws
     querymodel->setQuery(action_query);
     ui ->tableView->setModel(querymodel);
 }
-
+void MainWindow::on_actio_add_product_triggered() // Dodaj nowy Produkt do bazy danych
+{
+    AddProduct addProductDialog;
+    addProductDialog.setModal(true);
+    addProductDialog.exec();
+}
 void MainWindow::on_actioninformacje_triggered() // Wyświetl informacje o programie
 {
-
-
 
 }
 
 void MainWindow::on_action_delete_producy_triggered() // Usuń wybrane produkty z bazy danych
 {
-    QModelIndexList selection =ui-> tableView ->selectionModel()->selectedRows();
+    QModelIndexList selection = ui-> tableView ->selectionModel()->selectedRows();
     QModelIndex index;
     QString id;
 
     // Można wybrać wiele wierszy do usunięcia
     for(int i=0; i< selection.count(); i++)
     {
-        //querymodel = new QSqlQueryModel(); // Przy pierwszym przebiegu pętli działa bez zarzutu, ale trzeba tworzyć nowe modele zapytań
+        //delete querymodel;
+        querymodel = new QSqlQueryModel(); // Przy pierwszym przebiegu pętli działa bez zarzutu, ale trzeba tworzyć nowe modele zapytań
         index = selection.at(i);
         id = ui->tableView->model()->data(ui->tableView->model()->index(index.row(),0)).toString();
         qDebug()<< id;

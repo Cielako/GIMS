@@ -4,7 +4,7 @@
 #include <QDialog>
 #include <QtSql>
 #include <QSqlDatabase>
-#include <QMessageBox>
+//#include <QMessageBox>
 #include <QSqlError>
 
 namespace Ui {

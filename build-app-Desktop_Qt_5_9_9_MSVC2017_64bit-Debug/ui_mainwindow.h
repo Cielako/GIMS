@@ -142,7 +142,7 @@ public:
         action_edit_product->setText(QApplication::translate("MainWindow", "Edytuj Towar", Q_NULLPTR));
         action_delete_producy->setText(QApplication::translate("MainWindow", "Usu\305\204 Towar", Q_NULLPTR));
         action_exit_app->setText(QApplication::translate("MainWindow", "Zamknij Program", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\">Wyszukaj w bazie danych</span></p></body></html>", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\">Wyszukaj w magzaynie</span></p><p align=\"center\"><br/></p></body></html>", Q_NULLPTR));
         menuO_programie->setTitle(QApplication::translate("MainWindow", "O programie", Q_NULLPTR));
         menuBaza->setTitle(QApplication::translate("MainWindow", "Program", Q_NULLPTR));
         toolBar->setWindowTitle(QApplication::translate("MainWindow", "toolBar", Q_NULLPTR));

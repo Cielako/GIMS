@@ -36,6 +36,10 @@ void MainWindow::on_actio_add_product_triggered() // Dodaj nowy Produkt do bazy 
     AddProduct addProductDialog;
     addProductDialog.setModal(true);
     addProductDialog.exec();
+
+    action_query = "SELECT * FROM towary";
+    querymodel->setQuery(action_query);
+    ui ->tableView->setModel(querymodel);
 }
 void MainWindow::on_actioninformacje_triggered() // Wyświetl informacje o programie
 {

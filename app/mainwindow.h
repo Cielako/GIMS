@@ -26,14 +26,18 @@ public:
     ~MainWindow();
     QString action_query;
 
+    QStringList productData;
+
 private slots:
     void on_actioninformacje_triggered();
     void on_action_show_all_productsl_triggered();
+    void on_actio_add_product_triggered();
     void on_action_delete_producy_triggered();
     void on_action_exit_app_triggered();
     void on_searchTerm_textChanged();
+    //29.11
+    //QStringList pass_product_data(QStringList product);
 
-    void on_actio_add_product_triggered();
 
 private:
     Ui::MainWindow *ui;

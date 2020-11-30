@@ -8,6 +8,8 @@
 #include <QSqlError>
 #include <QString>
 
+
+
 namespace Ui {
 class AddProduct;
 }
@@ -19,15 +21,13 @@ class AddProduct : public QDialog
 public:
     explicit AddProduct(QWidget *parent = nullptr);
     ~AddProduct();
-
+    QStringList productData; // Lista danych dla nowego produktu
+    QStringList my_function( QStringList &productData); // fun zwracająca dane nowego produktu
 private slots:
     void on_AddProductButton_clicked();
-
     void on_CancelAddProductButton_clicked();
-
 private:
     Ui::AddProduct *ui;
-    QStringList *productInfo; // dodano jakby się wywalił program
 };
 
 #endif // ADDPRODUCT_H

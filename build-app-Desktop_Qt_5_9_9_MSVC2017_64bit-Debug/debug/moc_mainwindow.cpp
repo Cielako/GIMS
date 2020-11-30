@@ -35,18 +35,18 @@ QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
 QT_MOC_LITERAL(1, 11, 29), // "on_actioninformacje_triggered"
 QT_MOC_LITERAL(2, 41, 0), // ""
 QT_MOC_LITERAL(3, 42, 38), // "on_action_show_all_productsl_..."
-QT_MOC_LITERAL(4, 81, 34), // "on_action_delete_producy_trig..."
-QT_MOC_LITERAL(5, 116, 28), // "on_action_exit_app_triggered"
-QT_MOC_LITERAL(6, 145, 25), // "on_searchTerm_textChanged"
-QT_MOC_LITERAL(7, 171, 30) // "on_actio_add_product_triggered"
+QT_MOC_LITERAL(4, 81, 30), // "on_actio_add_product_triggered"
+QT_MOC_LITERAL(5, 112, 34), // "on_action_delete_producy_trig..."
+QT_MOC_LITERAL(6, 147, 28), // "on_action_exit_app_triggered"
+QT_MOC_LITERAL(7, 176, 25) // "on_searchTerm_textChanged"
 
     },
     "MainWindow\0on_actioninformacje_triggered\0"
     "\0on_action_show_all_productsl_triggered\0"
+    "on_actio_add_product_triggered\0"
     "on_action_delete_producy_triggered\0"
     "on_action_exit_app_triggered\0"
-    "on_searchTerm_textChanged\0"
-    "on_actio_add_product_triggered"
+    "on_searchTerm_textChanged"
 };
 #undef QT_MOC_LITERAL
 
@@ -90,10 +90,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->on_actioninformacje_triggered(); break;
         case 1: _t->on_action_show_all_productsl_triggered(); break;
-        case 2: _t->on_action_delete_producy_triggered(); break;
-        case 3: _t->on_action_exit_app_triggered(); break;
-        case 4: _t->on_searchTerm_textChanged(); break;
-        case 5: _t->on_actio_add_product_triggered(); break;
+        case 2: _t->on_actio_add_product_triggered(); break;
+        case 3: _t->on_action_delete_producy_triggered(); break;
+        case 4: _t->on_action_exit_app_triggered(); break;
+        case 5: _t->on_searchTerm_textChanged(); break;
         default: ;
         }
     }

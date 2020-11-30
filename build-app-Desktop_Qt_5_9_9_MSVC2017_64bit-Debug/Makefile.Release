@@ -204,8 +204,8 @@ release\moc_predefs.h: C:\Qt\5.9.9\msvc2017_64\mkspecs\features\data\dummy.cpp
 compiler_moc_header_make_all: release\moc_addproduct.cpp release\moc_dialog.cpp release\moc_mainwindow.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) release\moc_addproduct.cpp release\moc_dialog.cpp release\moc_mainwindow.cpp
-release\moc_addproduct.cpp: C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QWidget \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qwidget.h \
+release\moc_addproduct.cpp: C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QDialog \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qdialog.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qtwidgetsglobal.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qtguiglobal.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qglobal.h \
@@ -231,6 +231,7 @@ release\moc_addproduct.cpp: C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QWidget \
 		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qversiontagging.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qtgui-config.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qtwidgets-config.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qwidget.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qwindowdefs.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qobjectdefs.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qnamespace.h \
@@ -304,6 +305,159 @@ release\moc_addproduct.cpp: C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QWidget \
 		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfiledevice.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qvector2d.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qtouchdevice.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\QtSql \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\QtSqlDepends \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QtCore \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QtCoreDepends \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstractanimation.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstracteventdispatcher.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qeventloop.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstractitemmodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstractnativeeventfilter.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstractproxymodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstractstate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstracttransition.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qanimationgroup.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qarraydataops.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qarraydatapointer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qbasictimer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qbitarray.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qbuffer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qbytearraymatcher.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qcache.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qcollator.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qcommandlineoption.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qcommandlineparser.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qcoreapplication.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qcryptographichash.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qdatetime.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qdeadlinetimer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qelapsedtimer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qdir.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfileinfo.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qdiriterator.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qeasingcurve.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qendian.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qeventtransition.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qexception.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfactoryinterface.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfileselector.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QObject \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QStringList \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfilesystemwatcher.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfinalstate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfuture.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfutureinterface.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qrunnable.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qresultstore.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfuturesynchronizer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfuturewatcher.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qhistorystate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qidentityproxymodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qisenum.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qitemselectionmodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qjsonarray.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qjsonvalue.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qjsondocument.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qjsonobject.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qlibrary.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qlibraryinfo.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qversionnumber.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qlinkedlist.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qlockfile.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qloggingcategory.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qmath.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qmessageauthenticationcode.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qmetaobject.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qmimedata.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qmimedatabase.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qmimetype.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qobjectcleanuphandler.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qoperatingsystemversion.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qparallelanimationgroup.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qpauseanimation.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qplugin.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qpointer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qpluginloader.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qprocess.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qpropertyanimation.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qvariantanimation.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qqueue.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qreadwritelock.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qregularexpression.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qresource.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsavefile.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qscopedvaluerollback.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsemaphore.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsequentialanimationgroup.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsettings.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsharedmemory.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsignalmapper.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsignaltransition.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsocketnotifier.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsortfilterproxymodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qstack.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qstandardpaths.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qstate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qstatemachine.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qstorageinfo.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qstringlistmodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsystemsemaphore.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtemporarydir.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QScopedPointer \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtemporaryfile.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtextboundaryfinder.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtextcodec.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qthread.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qthreadpool.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qthreadstorage.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtimeline.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtimer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtimezone.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtranslator.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtypetraits.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\quuid.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qwaitcondition.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qwineventnotifier.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qxmlstream.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtcoreversion.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qtsqlglobal.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqldatabase.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqldriver.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqldriverplugin.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlerror.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlfield.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlindex.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlrecord.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlquery.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlquerymodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlrelationaldelegate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qitemdelegate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractitemdelegate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qstyleoption.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractspinbox.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qvalidator.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qicon.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qslider.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractslider.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qstyle.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qtabbar.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qtabwidget.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qrubberband.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qframe.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qlistview.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractitemview.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractscrollarea.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qcombobox.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlrelationaltablemodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqltablemodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlresult.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qtsqlversion.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\QSqlDatabase \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QMessageBox \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qmessagebox.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\QSqlError \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QString \
 		..\app\addproduct.h \
 		release\moc_predefs.h \
 		C:\Qt\5.9.9\msvc2017_64\bin\moc.exe
@@ -559,8 +713,6 @@ release\moc_dialog.cpp: C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QDialog \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlresult.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qtsqlversion.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\QSqlDatabase \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QMessageBox \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qmessagebox.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\QSqlError \
 		..\app\dialog.h \
 		release\moc_predefs.h \
@@ -859,6 +1011,7 @@ release\moc_mainwindow.cpp: C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QMainWindo
 		..\app\database.h \
 		..\app\mainwindow.h \
 		..\app\addproduct.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QString \
 		..\app\mainwindow.h \
 		release\moc_predefs.h \
 		C:\Qt\5.9.9\msvc2017_64\bin\moc.exe
@@ -894,8 +1047,8 @@ compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_heade
 ####### Compile
 
 release\addproduct.obj: ..\app\addproduct.cpp ../app/addproduct.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QWidget \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qwidget.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QDialog \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qdialog.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qtwidgetsglobal.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qtguiglobal.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qglobal.h \
@@ -921,6 +1074,7 @@ release\addproduct.obj: ..\app\addproduct.cpp ../app/addproduct.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qversiontagging.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qtgui-config.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qtwidgets-config.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qwidget.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qwindowdefs.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qobjectdefs.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qnamespace.h \
@@ -994,16 +1148,166 @@ release\addproduct.obj: ..\app\addproduct.cpp ../app/addproduct.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfiledevice.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qvector2d.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qtouchdevice.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\QtSql \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\QtSqlDepends \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QtCore \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QtCoreDepends \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstractanimation.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstracteventdispatcher.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qeventloop.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstractitemmodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstractnativeeventfilter.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstractproxymodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstractstate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstracttransition.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qanimationgroup.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qarraydataops.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qarraydatapointer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qbasictimer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qbitarray.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qbuffer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qbytearraymatcher.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qcache.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qcollator.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qcommandlineoption.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qcommandlineparser.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qcoreapplication.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qcryptographichash.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qdatetime.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qdeadlinetimer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qelapsedtimer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qdir.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfileinfo.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qdiriterator.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qeasingcurve.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qendian.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qeventtransition.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qexception.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfactoryinterface.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfileselector.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QObject \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QStringList \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfilesystemwatcher.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfinalstate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfuture.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfutureinterface.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qrunnable.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qresultstore.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfuturesynchronizer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qfuturewatcher.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qhistorystate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qidentityproxymodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qisenum.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qitemselectionmodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qjsonarray.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qjsonvalue.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qjsondocument.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qjsonobject.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qlibrary.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qlibraryinfo.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qversionnumber.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qlinkedlist.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qlockfile.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qloggingcategory.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qmath.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qmessageauthenticationcode.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qmetaobject.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qmimedata.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qmimedatabase.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qmimetype.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qobjectcleanuphandler.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qoperatingsystemversion.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qparallelanimationgroup.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qpauseanimation.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qplugin.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qpointer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qpluginloader.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qprocess.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qpropertyanimation.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qvariantanimation.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qqueue.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qreadwritelock.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qregularexpression.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qresource.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsavefile.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qscopedvaluerollback.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsemaphore.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsequentialanimationgroup.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsettings.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsharedmemory.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsignalmapper.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsignaltransition.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsocketnotifier.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsortfilterproxymodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qstack.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qstandardpaths.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qstate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qstatemachine.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qstorageinfo.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qstringlistmodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qsystemsemaphore.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtemporarydir.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QScopedPointer \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtemporaryfile.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtextboundaryfinder.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtextcodec.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qthread.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qthreadpool.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qthreadstorage.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtimeline.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtimer.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtimezone.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtranslator.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtypetraits.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\quuid.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qwaitcondition.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qwineventnotifier.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qxmlstream.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qtcoreversion.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qtsqlglobal.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqldatabase.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqldriver.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqldriverplugin.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlerror.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlfield.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlindex.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlrecord.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlquery.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlquerymodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlrelationaldelegate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qitemdelegate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractitemdelegate.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qstyleoption.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractspinbox.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qvalidator.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qicon.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qslider.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractslider.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qstyle.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qtabbar.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qtabwidget.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qrubberband.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qframe.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qlistview.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractitemview.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractscrollarea.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qcombobox.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlrelationaltablemodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqltablemodel.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlresult.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qtsqlversion.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\QSqlDatabase \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QMessageBox \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qmessagebox.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtSql\QSqlError \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QString \
 		ui_addproduct.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QVariant \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QAction \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qaction.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qicon.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qactiongroup.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QApplication \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qapplication.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qcoreapplication.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qeventloop.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qdesktopwidget.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qguiapplication.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qinputmethod.h \
@@ -1018,22 +1322,6 @@ release\addproduct.obj: ..\app\addproduct.cpp ../app/addproduct.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qgridlayout.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QHeaderView \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qheaderview.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractitemview.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractscrollarea.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qframe.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qabstractitemmodel.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qitemselectionmodel.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractitemdelegate.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qstyleoption.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractspinbox.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtGui\qvalidator.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtCore\qregularexpression.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qslider.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractslider.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qstyle.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qtabbar.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qtabwidget.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qrubberband.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QLabel \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qlabel.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QLineEdit \
@@ -1047,7 +1335,8 @@ release\addproduct.obj: ..\app\addproduct.cpp ../app/addproduct.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qabstractbutton.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QSplitter \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qsplitter.h \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QVBoxLayout
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QVBoxLayout \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QWidget
 
 release\database.obj: ..\app\database.cpp ../app/database.h \
 		../app/mainwindow.h \
@@ -1340,7 +1629,8 @@ release\database.obj: ..\app\database.cpp ../app/database.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QWidget \
 		../app/dialog.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QDialog \
-		../app/addproduct.h
+		../app/addproduct.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QString
 
 release\dialog.obj: ..\app\dialog.cpp ../app/dialog.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QDialog \
@@ -1593,8 +1883,6 @@ release\dialog.obj: ..\app\dialog.cpp ../app/dialog.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlresult.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qtsqlversion.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\QSqlDatabase \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QMessageBox \
-		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qmessagebox.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\QSqlError \
 		ui_dialog.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QVariant \
@@ -1906,7 +2194,8 @@ release\main.obj: ..\app\main.cpp ../app/mainwindow.h \
 		../app/dialog.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QDialog \
 		../app/database.h \
-		../app/addproduct.h
+		../app/addproduct.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QString
 
 release\mainwindow.obj: ..\app\mainwindow.cpp ../app/mainwindow.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QMainWindow \
@@ -2199,7 +2488,8 @@ release\mainwindow.obj: ..\app\mainwindow.cpp ../app/mainwindow.h \
 		../app/dialog.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QDialog \
 		../app/database.h \
-		../app/addproduct.h
+		../app/addproduct.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QString
 
 release\qrc_res.obj: release\qrc_res.cpp 
 

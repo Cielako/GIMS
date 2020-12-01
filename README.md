@@ -51,7 +51,7 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
  - [x] Propozycja projektu (20.10.20)
  - [x] Raport I (03.11.20)
  - [x] Raport II (17.11.20)
- - [ ] Raport III (01.12.20)
+ - [x] Raport III (01.12.20)
  - [ ] Raport IV(15.12.20)
  - [ ] Prototyp (12.01.21)
  - [ ] Prezentacje/oddanie projektu (02.02.21)

@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "addproduct.h"
+
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -16,10 +16,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->tableView->verticalHeader()->hide(); // schowanie numerów wierszy
     ui->tableView ->setSelectionBehavior(QAbstractItemView::SelectRows);// Zaznacz cały wiersz
 
-    for (int i = 0; i <= 4; ++i) { // utworzenie elementów listy nowego produktu
-        //productInfo->insert(i,"");
-        productData.insert(i,"");
-    }
 }
 
 MainWindow::~MainWindow()
@@ -39,15 +35,17 @@ void MainWindow::on_actio_add_product_triggered() // Dodaj nowy Produkt do bazy 
     AddProduct addProductDialog;
     addProductDialog.setModal(true);
     addProductDialog.exec();
-    addProductDialog.my_function(productData);
 
     action_query = "SELECT * FROM towary";
     querymodel->setQuery(action_query);
     ui ->tableView->setModel(querymodel);
 
 }
-void MainWindow::on_actioninformacje_triggered() // Wyświetl informacje o programie
+void MainWindow::on_action_information_triggered() // Wyświetl informacje o programie
 {
+    About aboutDialog;
+    aboutDialog.setModal(true);
+    aboutDialog.exec();
 
 }
 
@@ -100,7 +98,3 @@ void MainWindow::on_searchTerm_textChanged() // Po wpisaniu
        //qDebug() << ui->searchTerm ->text();
    }
 }
-//29.11
-//QStringList MainWindow::pass_product_data(QStringList product){
-    //return product;
-//}

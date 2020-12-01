@@ -22,7 +22,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
     QByteArrayData data[8];
-    char stringdata0[202];
+    char stringdata0[204];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,16 +32,16 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 29), // "on_actioninformacje_triggered"
-QT_MOC_LITERAL(2, 41, 0), // ""
-QT_MOC_LITERAL(3, 42, 38), // "on_action_show_all_productsl_..."
-QT_MOC_LITERAL(4, 81, 30), // "on_actio_add_product_triggered"
-QT_MOC_LITERAL(5, 112, 34), // "on_action_delete_producy_trig..."
-QT_MOC_LITERAL(6, 147, 28), // "on_action_exit_app_triggered"
-QT_MOC_LITERAL(7, 176, 25) // "on_searchTerm_textChanged"
+QT_MOC_LITERAL(1, 11, 31), // "on_action_information_triggered"
+QT_MOC_LITERAL(2, 43, 0), // ""
+QT_MOC_LITERAL(3, 44, 38), // "on_action_show_all_productsl_..."
+QT_MOC_LITERAL(4, 83, 30), // "on_actio_add_product_triggered"
+QT_MOC_LITERAL(5, 114, 34), // "on_action_delete_producy_trig..."
+QT_MOC_LITERAL(6, 149, 28), // "on_action_exit_app_triggered"
+QT_MOC_LITERAL(7, 178, 25) // "on_searchTerm_textChanged"
 
     },
-    "MainWindow\0on_actioninformacje_triggered\0"
+    "MainWindow\0on_action_information_triggered\0"
     "\0on_action_show_all_productsl_triggered\0"
     "on_actio_add_product_triggered\0"
     "on_action_delete_producy_triggered\0"
@@ -88,7 +88,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         MainWindow *_t = static_cast<MainWindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_actioninformacje_triggered(); break;
+        case 0: _t->on_action_information_triggered(); break;
         case 1: _t->on_action_show_all_productsl_triggered(); break;
         case 2: _t->on_actio_add_product_triggered(); break;
         case 3: _t->on_action_delete_producy_triggered(); break;

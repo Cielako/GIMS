@@ -14,16 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTableView" name="tableView">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>120</y>
-      <width>641</width>
-      <height>401</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="searchTerm">
     <property name="geometry">
      <rect>
@@ -45,6 +35,41 @@
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Wyszukaj w magzaynie&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="filter_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>80</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>nazwa</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kod</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kategoria</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>110</y>
+      <width>591</width>
+      <height>401</height>
+     </rect>
     </property>
    </widget>
   </widget>

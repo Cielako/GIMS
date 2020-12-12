@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -36,9 +37,10 @@ public:
     QAction *action_delete_producy;
     QAction *action_exit_app;
     QWidget *centralwidget;
-    QTableView *tableView;
     QLineEdit *searchTerm;
     QLabel *label;
+    QComboBox *filter_comboBox;
+    QTableView *tableView;
     QMenuBar *menubar;
     QMenu *menuO_programie;
     QMenu *menuBaza;
@@ -82,15 +84,18 @@ public:
         action_exit_app->setIcon(icon5);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
-        tableView = new QTableView(centralwidget);
-        tableView->setObjectName(QStringLiteral("tableView"));
-        tableView->setGeometry(QRect(70, 120, 641, 401));
         searchTerm = new QLineEdit(centralwidget);
         searchTerm->setObjectName(QStringLiteral("searchTerm"));
         searchTerm->setGeometry(QRect(250, 80, 271, 20));
         label = new QLabel(centralwidget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(270, 50, 231, 31));
+        filter_comboBox = new QComboBox(centralwidget);
+        filter_comboBox->setObjectName(QStringLiteral("filter_comboBox"));
+        filter_comboBox->setGeometry(QRect(540, 80, 69, 22));
+        tableView = new QTableView(centralwidget);
+        tableView->setObjectName(QStringLiteral("tableView"));
+        tableView->setGeometry(QRect(100, 110, 591, 401));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QStringLiteral("menubar"));
@@ -143,6 +148,12 @@ public:
         action_delete_producy->setText(QApplication::translate("MainWindow", "Usu\305\204 Towar", Q_NULLPTR));
         action_exit_app->setText(QApplication::translate("MainWindow", "Zamknij Program", Q_NULLPTR));
         label->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\">Wyszukaj w magzaynie</span></p><p align=\"center\"><br/></p></body></html>", Q_NULLPTR));
+        filter_comboBox->clear();
+        filter_comboBox->insertItems(0, QStringList()
+         << QApplication::translate("MainWindow", "nazwa", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "kod", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "kategoria", Q_NULLPTR)
+        );
         menuO_programie->setTitle(QApplication::translate("MainWindow", "O programie", Q_NULLPTR));
         menuBaza->setTitle(QApplication::translate("MainWindow", "Program", Q_NULLPTR));
         toolBar->setWindowTitle(QApplication::translate("MainWindow", "toolBar", Q_NULLPTR));

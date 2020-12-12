@@ -9,7 +9,7 @@
 #include <QSqlError>
 
 #include "ui_mainwindow.h"
-#include "dialog.h"
+#include "exit.h"
 #include "database.h"
 #include "addproduct.h"
 #include "about.h"
@@ -36,6 +36,7 @@ private slots:
     void on_action_exit_app_triggered();
     void on_searchTerm_textChanged();
 
+
 private:
     Ui::MainWindow *ui;
     Dialog *exitDialog;
@@ -43,6 +44,7 @@ private:
     AddProduct *addProductDialog;
     QString action_query;
     About *aboutDialog;
+    QString filter_name[3]={"nazwa","kod","kategoria"}; //Lista nazw filtrów
 
 };
 #endif // MAINWINDOW_H

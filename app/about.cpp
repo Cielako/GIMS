@@ -6,6 +6,8 @@ About::About(QWidget *parent) :
     ui(new Ui::About)
 {
     ui->setupUi(this);
+    this->setWindowTitle("Informacje");
+    this->setWindowIcon(QIcon(":/images/about.png"));
 }
 
 About::~About()

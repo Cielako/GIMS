@@ -39,7 +39,7 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 - [x] Pierwsze połączenie z bazą danych
 - [x] Wyświetlenie zawartości całej bazy danych w postaci tabeli
 - [x] Pasek Wyszukiwania, na ten czas wyszukiwanie po id (Test - do poprawy)
-- [ ] Dodanie filtrów wyszukiwania
+- [x] Dodanie filtrów wyszukiwania (Test)
 - [x] Pierwsza ingerencja w bazę danych z poziomu aplikacji
 - [x] Okno informacji o programie (Test)
 - [x] Dodawanie Obiektów (Test)

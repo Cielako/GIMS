@@ -8,7 +8,8 @@ AddProduct::AddProduct(QWidget *parent) :
     ui(new Ui::AddProduct),query(new QSqlQuery)
 {
     ui->setupUi(this);
-
+    this->setWindowTitle("Dodaj nowy produkt do magazynu");
+    this->setWindowIcon(QIcon(":/images/add.png"));
 }
 AddProduct::~AddProduct()
 {
@@ -18,13 +19,14 @@ AddProduct::~AddProduct()
 
 void AddProduct::on_AddProductButton_clicked() // Dodanie nowego produktu do bazy danych
 {
+    if (ui->lineAddProductCode->text().toInt())
     // zapytanie do bazy danych dodające nowy produkt
     query->prepare("INSERT INTO towary VALUES (:kod, :nazwa, :kategoria, :opis, :ilosc)");
     query->bindValue(":kod", ui->lineAddProductCode->text().toInt());
     query->bindValue(":nazwa", ui->lineAddProductName->text());
-    query->bindValue(":kategoria", ui->lineAddProductCategory->text());
+    query->bindValue(":kategoria", ui->lineAddProductCategory->text().toLower());
     query->bindValue(":opis", ui->lineAddProductDesc->text());
-    query->bindValue(":ilosc",ui->lineAddProductQuantity->text());
+    query->bindValue(":ilosc",ui->lineAddProductQuantity->text().toInt());
     query->exec();
 }
 

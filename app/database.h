@@ -21,7 +21,6 @@ public:
     void disconnect();
     void display_data();
 
-
 private:
     QSqlDatabase m_db;
     Ui::MainWindow *ref_to_ui;

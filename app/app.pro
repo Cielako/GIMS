@@ -12,7 +12,7 @@ SOURCES += \
     about.cpp \
     addproduct.cpp \
     database.cpp \
-    dialog.cpp \
+    exit.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -20,13 +20,13 @@ HEADERS += \
     about.h \
     addproduct.h \
     database.h \
-    dialog.h \
+    exit.h \
     mainwindow.h
 
 FORMS += \
     about.ui \
     addproduct.ui \
-    dialog.ui \
+    exit.ui \
     mainwindow.ui
 
 # Default rules for deployment.

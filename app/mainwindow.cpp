@@ -9,13 +9,12 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     this->setWindowTitle("GIMS"); // Zmień nazwę aplikacji
-    // połączenie z bazą danych
-    db_connect db;
+
+    db_connect db;  // połączenie z bazą danych
     db.connect(ui);
 
     ui->tableView->verticalHeader()->hide(); // schowanie numerów wierszy
     ui->tableView ->setSelectionBehavior(QAbstractItemView::SelectRows);// Zaznacz cały wiersz
-
 }
 
 MainWindow::~MainWindow()
@@ -84,17 +83,14 @@ void MainWindow::on_action_exit_app_triggered() // Wyjdź z programu
 }
 void MainWindow::on_searchTerm_textChanged() // Po wpisaniu
 {
-
-   if (ui->searchTerm ->text().isEmpty() == false) // Wywołanie domyślnej kwerendy kiedy pole jest puste
-   {
-       action_query = "SELECT * FROM towary WHERE kod = " + ui->searchTerm ->text();
-       querymodel->setQuery(action_query);
-       ui ->tableView->setModel(querymodel);
-   }
-   else {
-       action_query = "SELECT * FROM towary";
-       querymodel->setQuery(action_query);
-       ui ->tableView->setModel(querymodel);
-       //qDebug() << ui->searchTerm ->text();
+    for (int i = 0; i <= 2; i++) // Pętla odpowiada za wczytanie wartości dla konkretnego filtra
+    {
+      if ( ui->searchTerm ->text().isEmpty() == false && ui->filter_comboBox->currentIndex() == i){
+         action_query = "SELECT * FROM towary WHERE " + filter_name[i] + " LIKE '" + ui->searchTerm ->text() + "%'";
+         querymodel->setQuery(action_query);
+         ui ->tableView->setModel(querymodel);
+      }
    }
 }
+
+

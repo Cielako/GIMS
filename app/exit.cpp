@@ -1,5 +1,5 @@
-#include "dialog.h"
-#include "ui_dialog.h"
+#include "exit.h"
+#include "ui_exit.h"
 
 #include<iostream>
 Dialog::Dialog(QWidget *parent) :
@@ -7,6 +7,8 @@ Dialog::Dialog(QWidget *parent) :
     ui(new Ui::Dialog)
 {
     ui->setupUi(this);
+    this->setWindowTitle("Wyjście");
+    this->setWindowIcon(QIcon(":/images/exit.png"));
 }
 
 Dialog::~Dialog()

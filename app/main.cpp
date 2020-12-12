@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include "dialog.h"
+#include "exit.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])

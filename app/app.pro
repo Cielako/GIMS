@@ -12,6 +12,7 @@ SOURCES += \
     about.cpp \
     addproduct.cpp \
     database.cpp \
+    edit.cpp \
     exit.cpp \
     main.cpp \
     mainwindow.cpp
@@ -20,12 +21,14 @@ HEADERS += \
     about.h \
     addproduct.h \
     database.h \
+    edit.h \
     exit.h \
     mainwindow.h
 
 FORMS += \
     about.ui \
     addproduct.ui \
+    edit.ui \
     exit.ui \
     mainwindow.ui
 

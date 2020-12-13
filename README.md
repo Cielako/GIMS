@@ -38,14 +38,16 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 - [x] Projekt roboczej bazy danych 
 - [x] Pierwsze połączenie z bazą danych
 - [x] Wyświetlenie zawartości całej bazy danych w postaci tabeli
-- [x] Pasek Wyszukiwania, na ten czas wyszukiwanie po id (Test - do poprawy)
-- [x] Dodanie filtrów wyszukiwania (Test)
+- [x] Pasek Wyszukiwania
+- [x] Filtry i Sortowanie wyszukiwania (Test)
 - [x] Pierwsza ingerencja w bazę danych z poziomu aplikacji
 - [x] Okno informacji o programie (Test)
 - [x] Dodawanie Obiektów (Test)
 - [x] Usuwanie Obiektów (Test - do lekkiej korekty)
+- [ ] Poprawa wyglądu okna informacji o aplikacji
 - [ ] Edycja istniejących obiektów
 - [ ] Zaprogramowanie utworzonych ikon
+- [ ] Korekta błędów aplikacji (jeżeli takowe istnieją)  
 
 ### Raporty:
  - [x] Propozycja projektu (20.10.20)

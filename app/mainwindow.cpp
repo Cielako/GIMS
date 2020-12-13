@@ -83,14 +83,21 @@ void MainWindow::on_action_exit_app_triggered() // Wyjdź z programu
 }
 void MainWindow::on_searchTerm_textChanged() // Po wpisaniu
 {
-    for (int i = 0; i <= 2; i++) // Pętla odpowiada za wczytanie wartości dla konkretnego filtra
+    for (int i = 0; i <= 1; i++) // Pętla odpowiada za wczytanie wartości dla konkretnego sortowania
     {
-      if ( ui->searchTerm ->text().isEmpty() == false && ui->filter_comboBox->currentIndex() == i){
-         action_query = "SELECT * FROM towary WHERE " + filter_name[i] + " LIKE '" + ui->searchTerm ->text() + "%'";
-         querymodel->setQuery(action_query);
-         ui ->tableView->setModel(querymodel);
-      }
-   }
+        if ( ui->searchTerm ->text().isEmpty() == false && ui->sort_comboBox->currentIndex() == i)
+        {
+            for (int j = 0; j <= 2; j++) // Pętla odpowiada za wczytanie wartości dla konkretnego filtra
+            {
+              if (ui->filter_comboBox->currentIndex() == j){
+                 action_query = "SELECT * FROM towary WHERE " + filter_name[j] + " LIKE '%" + ui->searchTerm ->text() + "%'" + "ORDER BY" + " " + filter_name[j] + " " + sort_type[i] ;
+                 querymodel->setQuery(action_query);
+                 ui ->tableView->setModel(querymodel);
+              }
+           }
+        }
+
+     }
 }
 
 

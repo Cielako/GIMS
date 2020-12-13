@@ -45,6 +45,7 @@ private:
     QString action_query;
     About *aboutDialog;
     QString filter_name[3]={"nazwa","kod","kategoria"}; //Lista nazw filtrów
+    QString sort_type[2] = {"ASC", "DESC"};
 
 };
 #endif // MAINWINDOW_H

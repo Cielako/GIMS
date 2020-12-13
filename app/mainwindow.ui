@@ -6,29 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>752</width>
+    <height>597</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="searchTerm">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>80</y>
-      <width>271</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>50</y>
+      <x>260</x>
+      <y>10</y>
       <width>231</width>
       <height>31</height>
      </rect>
@@ -37,40 +27,58 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Wyszukaj w magzaynie&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="filter_comboBox">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>80</y>
-      <width>69</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>nazwa</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>kod</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>kategoria</string>
-     </property>
-    </item>
-   </widget>
    <widget class="QTableView" name="tableView">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>80</x>
       <y>110</y>
       <width>591</width>
       <height>401</height>
      </rect>
     </property>
+   </widget>
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>50</y>
+      <width>401</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLineEdit" name="searchTerm"/>
+    <widget class="QComboBox" name="filter_comboBox">
+     <item>
+      <property name="text">
+       <string>Nazwa</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Kod</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Kategoria</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="sort_comboBox">
+     <item>
+      <property name="text">
+       <string>Rosnąco</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Malejąco</string>
+      </property>
+     </item>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -78,7 +86,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>752</width>
      <height>21</height>
     </rect>
    </property>

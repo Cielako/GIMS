@@ -45,7 +45,7 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 - [x] Dodawanie Obiektów (Test)
 - [x] Usuwanie Obiektów (Test - do lekkiej korekty)
 - [ ] Poprawa wyglądu okna informacji o aplikacji
-- [ ] Edycja istniejących obiektów
+- [x] Edycja istniejących obiektów (Test)
 - [ ] Zaprogramowanie utworzonych ikon
 - [ ] Korekta błędów aplikacji (jeżeli takowe istnieją)  
 

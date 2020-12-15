@@ -13,6 +13,7 @@
 #include "database.h"
 #include "addproduct.h"
 #include "about.h"
+#include "edit.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -37,15 +38,18 @@ private slots:
     void on_searchTerm_textChanged();
 
 
+    void on_action_edit_product_triggered();
+
 private:
     Ui::MainWindow *ui;
-    Dialog *exitDialog;
+    //Dialog *exitDialog;
     QSqlQueryModel *querymodel;
-    AddProduct *addProductDialog;
+    //AddProduct *addProductDialog;
     QString action_query;
-    About *aboutDialog;
+    //About *aboutDialog;
     QString filter_name[3]={"nazwa","kod","kategoria"}; //Lista nazw filtrów
     QString sort_type[2] = {"ASC", "DESC"};
+    QMessageBox *msgBox;
 
 };
 #endif // MAINWINDOW_H

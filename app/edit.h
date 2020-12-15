@@ -2,21 +2,29 @@
 #define EDIT_H
 
 #include <QDialog>
+#include <QtSql>
+
 
 namespace Ui {
-class edit;
+class Edit;
 }
 
-class edit : public QDialog
+class Edit : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit edit(QWidget *parent = nullptr);
-    ~edit();
+    explicit Edit(QWidget *parent = nullptr);
+    ~Edit();
+     int passEditData(QString[5]);
 
 private:
-    Ui::edit *ui;
+    Ui::Edit *ui;
+    QSqlQuery *query;
+
+
+private slots:
+   void on_EditProductButton_clicked();
 };
 
 #endif // EDIT_H

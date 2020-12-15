@@ -19,7 +19,7 @@ AddProduct::~AddProduct()
 
 void AddProduct::on_AddProductButton_clicked() // Dodanie nowego produktu do bazy danych
 {
-    if (ui->lineAddProductCode->text().toInt())
+
     // zapytanie do bazy danych dodające nowy produkt
     query->prepare("INSERT INTO towary VALUES (:kod, :nazwa, :kategoria, :opis, :ilosc)");
     query->bindValue(":kod", ui->lineAddProductCode->text().toInt());

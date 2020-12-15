@@ -5,7 +5,7 @@
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow), querymodel(new QSqlQueryModel)
+    , ui(new Ui::MainWindow), querymodel(new QSqlQueryModel),msgBox(new QMessageBox)
 {
     ui->setupUi(this);
     this->setWindowTitle("GIMS"); // Zmień nazwę aplikacji
@@ -21,6 +21,7 @@ MainWindow::~MainWindow()
 {
     delete ui;
     delete querymodel;
+    delete msgBox;
 }
 
 void MainWindow::on_action_show_all_productsl_triggered() // Wczytaj ponownie wszystkie towary
@@ -94,10 +95,38 @@ void MainWindow::on_searchTerm_textChanged() // Po wpisaniu
                  querymodel->setQuery(action_query);
                  ui ->tableView->setModel(querymodel);
               }
-           }
+            }
         }
 
      }
 }
 
 
+
+void MainWindow::on_action_edit_product_triggered()
+{
+    QModelIndexList selection = ui-> tableView ->selectionModel()->selectedRows();
+    if (selection.count() > 1 || selection.count() == 0 ){
+        msgBox->setText("Wybrano nieprawidłową liczbę produktów, spróbuj ponownie !");
+        msgBox->exec();
+    }
+    else{
+        QModelIndex index;
+        QString product_data[5];
+        Edit editProduct;
+
+        index = selection.at(0);
+        for (int i = 0; i <= 4; i++)
+        {
+            product_data[i].append(ui->tableView->model()->data(ui->tableView->model()->index(index.row(),i)).toString());
+        }
+        qDebug() << product_data[0];
+        editProduct.passEditData(product_data);
+        editProduct.setModal(true);
+        editProduct.exec();
+        action_query = "SELECT * FROM towary";
+        querymodel->setQuery(action_query);
+        ui ->tableView->setModel(querymodel);
+    }
+
+}

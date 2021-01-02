@@ -3,7 +3,7 @@
 
 Edit::Edit(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::Edit),query(new QSqlQuery)
+    ui(new Ui::Edit),query(new QSqlQuery),msgBox(new QMessageBox)
 {
     ui->setupUi(this);
 }
@@ -11,6 +11,7 @@ Edit::Edit(QWidget *parent) :
 Edit::~Edit()
 {
     delete ui;
+    delete msgBox;// Komunikat aplikacji
 }
 
 int Edit::passEditData(QString dane[])
@@ -27,15 +28,25 @@ int Edit::passEditData(QString dane[])
 }
 void Edit::on_EditProductButton_clicked()
 {
-    // zapytanie do bazy danych dodające nowy produkt
-    query->prepare("UPDATE towary SET kod = :kod, nazwa = :nazwa, kategoria = :kategoria, opis = :opis, ilosc = :ilosc WHERE kod = :kod" );
-    query->bindValue(":kod", ui->lineEditProductCode->text().toInt());
-    query->bindValue(":nazwa", ui->lineEditProductName->text());
-    query->bindValue(":kategoria", ui->lineEditProductCategory->text().toLower());
-    query->bindValue(":opis", ui->lineEditProductDesc->text());
-    query->bindValue(":ilosc",ui->lineEditProductQuantity->text().toInt());
-    query->exec();
-    query->prepare("UPDATE towary SET kod = :kod WHERE kod = :kod");
+    if(ui->lineEditProductCode->text().isEmpty() || ui->lineEditProductName->text().isEmpty() || ui->lineEditProductCategory->text().isEmpty() || ui->lineEditProductDesc->text().isEmpty() || ui->lineEditProductQuantity->text().isEmpty()){
+        msgBox->setText("Wprowadzono nieprawidłową wartość lub pole pozostało puste");
+        msgBox->setWindowIcon(QIcon(":/images/warning.png"));
+        msgBox->setWindowTitle("Napotkano błąd");
+        msgBox->exec();
+
+    }
+    else{
+        query->prepare("UPDATE towary SET kod = :kod, nazwa = :nazwa, kategoria = :kategoria, opis = :opis, ilosc = :ilosc WHERE kod = :kod" );
+        query->bindValue(":kod", ui->lineEditProductCode->text().toInt());
+        query->bindValue(":nazwa", ui->lineEditProductName->text());
+        query->bindValue(":kategoria", ui->lineEditProductCategory->text().toLower());
+        query->bindValue(":opis", ui->lineEditProductDesc->text());
+        query->bindValue(":ilosc",ui->lineEditProductQuantity->text().toInt());
+        //query->prepare("UPDATE towary SET kod = :kod WHERE kod = :kod");
+        query->exec();
+        this->close();
+    }
+
 }
 
 

@@ -201,6 +201,7 @@ debug\qrc_res.cpp: ..\app\res.qrc \
 		..\app\add.png \
 		..\app\next.png \
 		..\app\search.png \
+		..\app\warning.png \
 		..\app\back.png \
 		..\app\about.png \
 		..\app\delete.png \
@@ -830,6 +831,8 @@ debug\moc_edit.cpp: C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QDialog \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqltablemodel.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlresult.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qtsqlversion.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QMessageBox \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qmessagebox.h \
 		..\app\edit.h \
 		debug\moc_predefs.h \
 		C:\Qt\5.9.9\msvc2017_64\bin\moc.exe
@@ -2422,6 +2425,8 @@ debug\edit.obj: ..\app\edit.cpp ../app/edit.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqltablemodel.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qsqlresult.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtSql\qtsqlversion.h \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QMessageBox \
+		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\qmessagebox.h \
 		ui_edit.h \
 		C:\Qt\5.9.9\msvc2017_64\include\QtCore\QVariant \
 		C:\Qt\5.9.9\msvc2017_64\include\QtWidgets\QAction \

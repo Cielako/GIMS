@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QtSql>
+#include <QMessageBox>
 
 
 namespace Ui {
@@ -21,6 +22,7 @@ public:
 private:
     Ui::Edit *ui;
     QSqlQuery *query;
+    QMessageBox *msgBox;
 
 
 private slots:

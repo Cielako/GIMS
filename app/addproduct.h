@@ -29,6 +29,7 @@ private slots:
 private:
     Ui::AddProduct *ui;
     QSqlQuery *query;
+    QMessageBox *msgBox;
 };
 
 #endif // ADDPRODUCT_H

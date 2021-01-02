@@ -58,7 +58,6 @@ void MainWindow::on_action_delete_producy_triggered() // Usuń wybrane produkty 
     // Można wybrać wiele wierszy do usunięcia
     for(int i=0; i< selection.count(); i++)
     {
-        //delete querymodel;
         querymodel = new QSqlQueryModel(); // Przy pierwszym przebiegu pętli działa bez zarzutu, ale trzeba tworzyć nowe modele zapytań
         index = selection.at(i);
         id = ui->tableView->model()->data(ui->tableView->model()->index(index.row(),0)).toString();
@@ -107,7 +106,9 @@ void MainWindow::on_action_edit_product_triggered()
 {
     QModelIndexList selection = ui-> tableView ->selectionModel()->selectedRows();
     if (selection.count() > 1 || selection.count() == 0 ){
-        msgBox->setText("Wybrano nieprawidłową liczbę produktów, spróbuj ponownie !");
+        msgBox->setText("Wybrano nieprawidłową liczbę towarów, spróbuj ponownie !");
+        msgBox->setWindowIcon(QIcon(":/images/warning.png"));
+        msgBox->setWindowTitle("Napotkano błąd");
         msgBox->exec();
     }
     else{

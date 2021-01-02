@@ -10,5 +10,6 @@
         <file>save.png</file>
         <file>search.png</file>
         <file>about.png</file>
+        <file>warning.png</file>
     </qresource>
 </RCC>

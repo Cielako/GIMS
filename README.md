@@ -39,14 +39,14 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 - [x] Pierwsze połączenie z bazą danych
 - [x] Wyświetlenie zawartości całej bazy danych w postaci tabeli
 - [x] Pasek Wyszukiwania
-- [x] Filtry i Sortowanie wyszukiwania (Test)
+- [x] Filtry i Sortowanie wyszukiwania
 - [x] Pierwsza ingerencja w bazę danych z poziomu aplikacji
-- [x] Okno informacji o programie (Test)
-- [x] Dodawanie Obiektów (Test)
+- [x] Okno informacji o programie
+- [x] Dodawanie Obiektów
 - [x] Usuwanie Obiektów (Test - do lekkiej korekty)
 - [ ] Poprawa wyglądu okna informacji o aplikacji
 - [x] Edycja istniejących obiektów (Test)
-- [ ] Zaprogramowanie utworzonych ikon
+- [x] Zaprogramowanie utworzonych ikon
 - [ ] Korekta błędów aplikacji (jeżeli takowe istnieją)  
 
 ### Raporty:
@@ -54,6 +54,6 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
  - [x] Raport I (03.11.20)
  - [x] Raport II (17.11.20)
  - [x] Raport III (01.12.20)
- - [ ] Raport IV(15.12.20)
+ - [x] Raport IV(15.12.20)
  - [ ] Prototyp (12.01.21)
  - [ ] Prezentacje/oddanie projektu (02.02.21)

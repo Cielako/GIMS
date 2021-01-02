@@ -24,6 +24,5 @@ void Dialog::on_exit_yes_no_accepted()
 
 void Dialog::on_exit_yes_no_rejected()
 {
-    this -> close();// Zamykamy otwarte okno
     qDebug() << "Anulowano zamkniecie aplikacji";
 }

@@ -39,25 +39,14 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 - [x] Pierwsze połączenie z bazą danych
 - [x] Wyświetlenie zawartości całej bazy danych w postaci tabeli
 - [x] Pasek Wyszukiwania
-<<<<<<< HEAD
 - [x] Filtry i Sortowanie wyszukiwania
 - [x] Pierwsza ingerencja w bazę danych z poziomu aplikacji
 - [x] Okno informacji o programie
 - [x] Dodawanie Obiektów
-- [x] Usuwanie Obiektów (Test - do lekkiej korekty)
-- [ ] Poprawa wyglądu okna informacji o aplikacji
-- [x] Edycja istniejących obiektów (Test)
-- [x] Zaprogramowanie utworzonych ikon
-=======
-- [x] Filtry i Sortowanie wyszukiwania 
-- [x] Pierwsza ingerencja w bazę danych z poziomu aplikacji
-- [x] Okno informacji o programie (Test)
-- [x] Dodawanie Obiektów 
-- [x] Usuwanie Obiektów 
+- [x] Usuwanie Obiektów (Test)
 - [ ] Poprawa wyglądu okna informacji o aplikacji
 - [x] Edycja istniejących obiektów 
-- [ ] Zaprogramowanie utworzonych ikon
->>>>>>> f1c7784f8864b6c11dc8bd1882ecf6c4d18be580
+- [x] Zaprogramowanie utworzonych ikon
 - [ ] Korekta błędów aplikacji (jeżeli takowe istnieją)  
 
 ### Raporty:

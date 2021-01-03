@@ -14,6 +14,7 @@
 #include "addproduct.h"
 #include "about.h"
 #include "edit.h"
+#include "login.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

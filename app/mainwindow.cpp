@@ -7,6 +7,10 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow), querymodel(new QSqlQueryModel),msgBox(new QMessageBox)
 {
+    Login uiLogin;
+    uiLogin.setModal(true);
+    uiLogin.exec();
+
     ui->setupUi(this);
     this->setWindowTitle("GIMS"); // Zmień nazwę aplikacji
 

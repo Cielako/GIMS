@@ -14,6 +14,7 @@ SOURCES += \
     database.cpp \
     edit.cpp \
     exit.cpp \
+    login.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -23,6 +24,7 @@ HEADERS += \
     database.h \
     edit.h \
     exit.h \
+    login.h \
     mainwindow.h
 
 FORMS += \
@@ -30,6 +32,7 @@ FORMS += \
     addproduct.ui \
     edit.ui \
     exit.ui \
+    login.ui \
     mainwindow.ui
 
 # Default rules for deployment.

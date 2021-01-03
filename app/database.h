@@ -19,12 +19,13 @@ public:
 
     void connect(Ui::MainWindow *ui);
     void disconnect();
-    void display_data();
+    void user_connect();
 
 private:
-    QSqlDatabase m_db;
+    //QSqlDatabase m_db;
     Ui::MainWindow *ref_to_ui;
     QSqlQueryModel *querymodel;
+    QSqlDatabase db;
 };
 
 #endif // DB_CONNECT_H

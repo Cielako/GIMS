@@ -20,11 +20,6 @@ db_connect::~db_connect()
 
 void db_connect::connect(Ui::MainWindow *ui)
 {
-    //db = QSqlDatabase::addDatabase("QMYSQL");// polaczenie z baza danych
-    //db.setHostName("127.0.0.1");
-    //db.setUserName("root");
-    //db.setPassword("");
-    //db.setDatabaseName("magazyn");
      if(db.open())
      {
          ref_to_ui = ui; // odwolanie do glownego okna aplikacji
@@ -38,9 +33,35 @@ void db_connect::connect(Ui::MainWindow *ui)
          qDebug() << error.databaseText();
      }
 }
-void db_connect::user_connect()
+bool db_connect::user_connect(QString login, QString password)
 {
 
+    if(db.open())
+    {
+        QSqlQuery query(db); // utworzenie zapytania
+        query.prepare("SELECT  username, password from users WHERE username = :login AND password = :pass"); // utworzenie zapytania
+        query.bindValue(":login", login);
+        query.bindValue(":pass", password);
+        query.exec();
+        while(query.next())
+        {
+            if(query.value(0).toString() != login || query.value(1).toString() != password)
+            {
+                //qDebug() << "login: " + query.value(0).toString(); // Sprawdzenie działania zapytania
+                //qDebug() << "hasło: " + query.value(1).toString();
+
+                qDebug() << "Zalogowano jako: " + query.value(0).toString();
+                return false;
+            }
+            return true;
+        }
+     }
+    else{
+        // Info dlaczego poloczenie sie nie powiodlo
+        QSqlError error = db.lastError();
+        qDebug() << error.databaseText();
+    }
+    return false;
 }
 void db_connect::disconnect()
 {

@@ -20,9 +20,12 @@ public:
 
 private slots:
     void on_loginButton_clicked();
+    void closeEvent(QCloseEvent *event);
 
 private:
     Ui::Login *ui;
+    QString login;
+    QString password;
 };
 
 #endif // LOGIN_H

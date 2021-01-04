@@ -19,7 +19,7 @@ public:
 
     void connect(Ui::MainWindow *ui);
     void disconnect();
-    void user_connect();
+    bool user_connect(QString, QString);
 
 private:
     //QSqlDatabase m_db;

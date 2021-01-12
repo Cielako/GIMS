@@ -18,7 +18,7 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
   - Filtrowanie
   - Sortowanie
 - Możliwość generowania raportu o stanie magazynowym (?)
-- Logowanie do aplikacji (?)
+- Logowanie do aplikacji
 - Utworzenie ekranu powitalnego (?)
 
 # Technologie:
@@ -56,5 +56,5 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
  - [x] Raport II (17.11.20)
  - [x] Raport III (01.12.20)
  - [x] Raport IV(15.12.20)
- - [ ] Prototyp (12.01.21)
+ - [x] Prototyp (12.01.21)
  - [ ] Prezentacje/oddanie projektu (02.02.21)

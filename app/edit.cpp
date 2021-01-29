@@ -50,3 +50,9 @@ void Edit::on_EditProductButton_clicked()
 }
 
 
+
+void Edit::on_CancelEditProductButton_clicked()
+{
+    this -> close();// Zamykamy otwarte okno
+    qDebug() << "Anulowano Edycję";
+}

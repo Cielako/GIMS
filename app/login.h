@@ -22,10 +22,12 @@ private slots:
     void on_loginButton_clicked();
     void closeEvent(QCloseEvent *event);
 
+
 private:
     Ui::Login *ui;
     QString login;
     QString password;
+    QMessageBox *msgBox;
 };
 
 #endif // LOGIN_H

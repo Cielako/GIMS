@@ -27,6 +27,7 @@ private:
 
 private slots:
    void on_EditProductButton_clicked();
+   void on_CancelEditProductButton_clicked();
 };
 
 #endif // EDIT_H

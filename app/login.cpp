@@ -3,10 +3,12 @@
 
 Login::Login(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::Login)
+    ui(new Ui::Login),msgBox(new QMessageBox)
 {
     ui->setupUi(this);
     ui->password_lineEdit->setEchoMode(QLineEdit::Password); // hasło jako gwiazdki
+    this->setWindowTitle("Zaloguj się");
+    this->setWindowIcon(QIcon(":/images/login.png"));
 }
 
 Login::~Login()
@@ -24,6 +26,13 @@ Login::~Login()
     if(db.user_connect(login,password) == true) // Jeśli True zamknij okno
     {
         qApp->exit();
+    }
+    else
+    {
+        msgBox->setWindowTitle("Napotkano błąd");
+        msgBox->setText("Wprowadzono nieprawidłowy login lub hasło");
+        msgBox->setWindowIcon(QIcon(":/images/warning.png"));
+        msgBox->exec();
     }
 }
 

@@ -24,11 +24,11 @@ QT_BEGIN_NAMESPACE
 class Ui_About
 {
 public:
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QLabel *welcome;
     QLabel *labelBasicInfo;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout_2;
     QSplitter *splitter;
     QLabel *labelHomePic;
@@ -49,29 +49,29 @@ public:
             About->setObjectName(QStringLiteral("About"));
         About->resize(567, 455);
         About->setStyleSheet(QStringLiteral(""));
-        widget = new QWidget(About);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(10, 10, 535, 111));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(About);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(10, 10, 535, 111));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        welcome = new QLabel(widget);
+        welcome = new QLabel(layoutWidget);
         welcome->setObjectName(QStringLiteral("welcome"));
 
         verticalLayout->addWidget(welcome);
 
-        labelBasicInfo = new QLabel(widget);
+        labelBasicInfo = new QLabel(layoutWidget);
         labelBasicInfo->setObjectName(QStringLiteral("labelBasicInfo"));
 
         verticalLayout->addWidget(labelBasicInfo);
 
-        widget1 = new QWidget(About);
-        widget1->setObjectName(QStringLiteral("widget1"));
-        widget1->setGeometry(QRect(110, 120, 332, 264));
-        verticalLayout_2 = new QVBoxLayout(widget1);
+        layoutWidget1 = new QWidget(About);
+        layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(110, 120, 332, 264));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget1);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        splitter = new QSplitter(widget1);
+        splitter = new QSplitter(layoutWidget1);
         splitter->setObjectName(QStringLiteral("splitter"));
         splitter->setOrientation(Qt::Horizontal);
         labelHomePic = new QLabel(splitter);
@@ -87,7 +87,7 @@ public:
 
         verticalLayout_2->addWidget(splitter);
 
-        splitter_2 = new QSplitter(widget1);
+        splitter_2 = new QSplitter(layoutWidget1);
         splitter_2->setObjectName(QStringLiteral("splitter_2"));
         splitter_2->setOrientation(Qt::Horizontal);
         labelAddPic = new QLabel(splitter_2);
@@ -102,7 +102,7 @@ public:
 
         verticalLayout_2->addWidget(splitter_2);
 
-        splitter_3 = new QSplitter(widget1);
+        splitter_3 = new QSplitter(layoutWidget1);
         splitter_3->setObjectName(QStringLiteral("splitter_3"));
         splitter_3->setOrientation(Qt::Horizontal);
         labelDelPic = new QLabel(splitter_3);
@@ -117,7 +117,7 @@ public:
 
         verticalLayout_2->addWidget(splitter_3);
 
-        splitter_4 = new QSplitter(widget1);
+        splitter_4 = new QSplitter(layoutWidget1);
         splitter_4->setObjectName(QStringLiteral("splitter_4"));
         splitter_4->setOrientation(Qt::Horizontal);
         labelExitPic = new QLabel(splitter_4);

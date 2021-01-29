@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->setupUi(this);
     this->setWindowTitle("GIMS"); // Zmień nazwę aplikacji
+    this->setWindowIcon(QIcon(":/images/gims.png"));
 
     db_connect db;  // połączenie z bazą danych
     db.connect(ui);
@@ -58,21 +59,30 @@ void MainWindow::on_action_delete_producy_triggered() // Usuń wybrane produkty 
     QModelIndexList selection = ui-> tableView ->selectionModel()->selectedRows();
     QModelIndex index;
     QString id;
-
-    // Można wybrać wiele wierszy do usunięcia
-    for(int i=0; i< selection.count(); i++)
-    {
-        querymodel = new QSqlQueryModel(); // Przy pierwszym przebiegu pętli działa bez zarzutu, ale trzeba tworzyć nowe modele zapytań
-        index = selection.at(i);
-        id = ui->tableView->model()->data(ui->tableView->model()->index(index.row(),0)).toString();
-        qDebug()<< id;
-        qDebug() << querymodel;
-        action_query = "DELETE FROM towary WHERE kod = " + id ;
-        querymodel->setQuery(action_query);
+    if (selection.count() == 0 ){
+        msgBox->setText("Wybrano nieprawidłową liczbę towarów, spróbuj ponownie !");
+        msgBox->setWindowIcon(QIcon(":/images/warning.png"));
+        msgBox->setWindowTitle("Napotkano błąd");
+        msgBox->exec();
     }
-    action_query = "SELECT * FROM towary";
-    querymodel->setQuery(action_query);
-    ui ->tableView->setModel(querymodel);
+    else {
+        // Można wybrać wiele wierszy do usunięcia
+        for(int i=0; i< selection.count(); i++)
+        {
+            querymodel = new QSqlQueryModel(); // Przy pierwszym przebiegu pętli działa bez zarzutu, ale trzeba tworzyć nowe modele zapytań
+            index = selection.at(i);
+            id = ui->tableView->model()->data(ui->tableView->model()->index(index.row(),0)).toString();
+            qDebug()<< id;
+            qDebug() << querymodel;
+            action_query = "DELETE FROM towary WHERE kod = " + id ;
+            querymodel->setQuery(action_query);
+        }
+        action_query = "SELECT * FROM towary";
+        querymodel->setQuery(action_query);
+        ui ->tableView->setModel(querymodel);
+    }
+
+
 }
 
 void MainWindow::on_action_exit_app_triggered() // Wyjdź z programu

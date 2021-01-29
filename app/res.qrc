@@ -11,5 +11,7 @@
         <file>search.png</file>
         <file>about.png</file>
         <file>warning.png</file>
+        <file>login.png</file>
+        <file>gims.png</file>
     </qresource>
 </RCC>

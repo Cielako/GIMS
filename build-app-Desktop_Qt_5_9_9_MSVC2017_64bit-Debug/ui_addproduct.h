@@ -149,7 +149,7 @@ public:
     void retranslateUi(QWidget *AddProduct)
     {
         AddProduct->setWindowTitle(QApplication::translate("AddProduct", "Form", Q_NULLPTR));
-        labelAdd->setText(QApplication::translate("AddProduct", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt;\">Dodaj nowy Produkt</span></p></body></html>", Q_NULLPTR));
+        labelAdd->setText(QApplication::translate("AddProduct", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt;\">Dodaj nowy towar</span></p></body></html>", Q_NULLPTR));
         labelProductCode->setText(QApplication::translate("AddProduct", "Kod", Q_NULLPTR));
         labelProductName->setText(QApplication::translate("AddProduct", "Nazwa", Q_NULLPTR));
         labelProductCategory->setText(QApplication::translate("AddProduct", "Kategoria", Q_NULLPTR));

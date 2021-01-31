@@ -47,9 +47,9 @@ Stworzenie prostej aplikacji z graficznym interfejsem do kontroli i zarządzania
 - [x] Poprawa wyglądu okna informacji o aplikacji
 - [x] Edycja istniejących obiektów 
 - [x] Zaprogramowanie utworzonych ikon
-- [ ] Korekta błędów aplikacji (jeżeli takowe istnieją)  
+- [x] Korekta błędów aplikacji (jeżeli takowe istnieją)  
 - [x] Logowanie do Aplikacji (Test)
-- [ ] Zmiana wyglądu i kolorystyki okien aplikacji
+- [x] Zmiana wyglądu i kolorystyki okien aplikacji
 
 ### Raporty:
  - [x] Propozycja projektu (20.10.20)

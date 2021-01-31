@@ -9,7 +9,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     Login uiLogin;
     uiLogin.setModal(true);
-    uiLogin.exec();
+    qDebug()<< uiLogin.exec();
+    //uiLogin.exec();
 
     ui->setupUi(this);
     this->setWindowTitle("GIMS"); // Zmień nazwę aplikacji
@@ -20,6 +21,13 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->tableView->verticalHeader()->hide(); // schowanie numerów wierszy
     ui->tableView ->setSelectionBehavior(QAbstractItemView::SelectRows);// Zaznacz cały wiersz
+    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);// Automatyczne dopasowanie zawartości
+    ui->tableView->verticalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+    ui->tableView->horizontalHeader()->setStyleSheet("color: black; font-weight: bold;");
+    ui->tableView->setStyleSheet("QTableView::item:selected { color:white; background:#000000; font-weight:900; }"
+                                 "QHeaderView::section {background: rgb(255, 255, 127);}"
+                                 "QTableView {background-color: transparent}");
+
 }
 
 MainWindow::~MainWindow()

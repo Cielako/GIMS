@@ -13,6 +13,11 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget { background-color: rgb(255, 249, 224)}
+#menubar { background-color: rgb(255, 249, 224) }
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -30,11 +35,18 @@
    <widget class="QTableView" name="tableView">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>30</x>
       <y>110</y>
-      <width>591</width>
+      <width>691</width>
       <height>401</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid black;
+background-color: transparent;
+
+
+</string>
     </property>
    </widget>
    <widget class="QSplitter" name="splitter">

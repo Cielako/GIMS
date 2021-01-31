@@ -150,7 +150,7 @@ public:
     void retranslateUi(QDialog *Edit)
     {
         Edit->setWindowTitle(QApplication::translate("Edit", "Dialog", Q_NULLPTR));
-        labelAdd->setText(QApplication::translate("Edit", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt;\">Edytuj produkt</span></p></body></html>", Q_NULLPTR));
+        labelAdd->setText(QApplication::translate("Edit", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt;\">Edytuj towar</span></p></body></html>", Q_NULLPTR));
         labelProductCode->setText(QApplication::translate("Edit", "Kod", Q_NULLPTR));
         labelProductName->setText(QApplication::translate("Edit", "Nazwa", Q_NULLPTR));
         labelProductCategory->setText(QApplication::translate("Edit", "Kategoria", Q_NULLPTR));

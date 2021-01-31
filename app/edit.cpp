@@ -6,6 +6,8 @@ Edit::Edit(QWidget *parent) :
     ui(new Ui::Edit),query(new QSqlQuery),msgBox(new QMessageBox)
 {
     ui->setupUi(this);
+    this->setWindowTitle("Edytuj towar w magazynie");
+    this->setWindowIcon(QIcon(":/images/edit.png"));
 }
 
 Edit::~Edit()

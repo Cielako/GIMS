@@ -8,7 +8,7 @@ AddProduct::AddProduct(QWidget *parent) :
     ui(new Ui::AddProduct),query(new QSqlQuery),msgBox(new QMessageBox)
 {
     ui->setupUi(this);
-    this->setWindowTitle("Dodaj nowy produkt do magazynu");
+    this->setWindowTitle("Dodaj nowy towar do magazynu");
     this->setWindowIcon(QIcon(":/images/add.png"));
 }
 AddProduct::~AddProduct()

@@ -36,8 +36,8 @@ Login::~Login()
     }
 }
 
- void Login::closeEvent(QCloseEvent *event)
+void Login::closeEvent(QCloseEvent *event)
  {
-    event->ignore();
-
+    //event->ignore();
+    exit(0);// zakończ działanie programu
  }

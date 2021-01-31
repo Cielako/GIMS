@@ -55,6 +55,9 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->resize(752, 597);
+        MainWindow->setStyleSheet(QLatin1String("#centralwidget { background-color: rgb(255, 249, 224)}\n"
+"#menubar { background-color: rgb(255, 249, 224) }\n"
+""));
         action_information = new QAction(MainWindow);
         action_information->setObjectName(QStringLiteral("action_information"));
         QIcon icon;
@@ -92,7 +95,12 @@ public:
         label->setGeometry(QRect(260, 10, 231, 31));
         tableView = new QTableView(centralwidget);
         tableView->setObjectName(QStringLiteral("tableView"));
-        tableView->setGeometry(QRect(80, 110, 591, 401));
+        tableView->setGeometry(QRect(30, 110, 691, 401));
+        tableView->setStyleSheet(QLatin1String("border: 1px solid black;\n"
+"background-color: transparent;\n"
+"\n"
+"\n"
+""));
         splitter = new QSplitter(centralwidget);
         splitter->setObjectName(QStringLiteral("splitter"));
         splitter->setGeometry(QRect(170, 50, 401, 20));
